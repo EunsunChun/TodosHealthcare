@@ -34,5 +34,10 @@ public class HealthcareController {
 	public String login(Model model){
 		return "login";
 	}
+	@RequestMapping(value="/logout", method=RequestMethod.GET)
+	public String logout(Model model){
+		System.out.println("Logout in HealthcareController");
+		return "login";
+	}
 }
 

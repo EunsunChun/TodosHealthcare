@@ -7,10 +7,10 @@
 	<title>Home</title>
 </head>
 <body>
-<c:url value="/logout" var="logoutUrl" />
+<c:url value="/login" var="logoutUrl" />
 	<!-- csrt for log out-->
 
-	<form action="/healthcare/login?logout" method="post" id="logoutForm">
+	<form action="${logoutUrl}" method="post" id="logoutForm">
 		<%
 			System.out.println("로그아웃 in HOME");
 		%>
@@ -32,7 +32,8 @@
 	</script>
 
 <form class="navbar-form navbar-right" >
- 	<a href = "javascript:formSubmit()"> 로그아웃 </a>
+ 	<a href = "javascript:formSubmit()"> 로그아웃 </a> 
+ 	<%-- <a href = "${logoutUrl}"> 로그아웃 </a> --%>
 </form>
 <h1>
 	Hello world!  

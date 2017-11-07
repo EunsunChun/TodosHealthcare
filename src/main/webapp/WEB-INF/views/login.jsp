@@ -9,7 +9,8 @@
 </head>
 <body>
 	<c:url value="/login" var="loginUrl"/>
-	<form action="${loginUrl}" method="post">       
+	<form action="${loginUrl}" method="post">
+		<h1>${param}</h1>       
 		<c:if test="${param.error != null}">        
 			<p>
 				Invalid username and password.
