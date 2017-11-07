@@ -39,6 +39,7 @@ local.properties
 .recommenders
 RemoteSystemsTempFiles/
 Servers/
+target/
 
 # External tool builders
 .externalToolBuilders/
